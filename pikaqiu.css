@@ -1,0 +1,138 @@
+.pikaqiu-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffe600;
+}
+.face {
+  margin-top: 40px;
+
+  position: absolute;
+  width: 420px;
+  height: 235px;
+}
+.eyes.left {
+  margin-left: 63px;
+}
+.eyes.right {
+  right: 0;
+  margin-right: 63px;
+}
+.face .eyes {
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: black;
+}
+.face .eyes::after {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+.nose {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.nose .nose-top {
+}
+.nose .nose-bottom {
+  width: 0;
+  height: 0;
+  border: 15px solid red;
+  border-bottom-color: transparent;
+  border-top-color: black;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 12px;
+}
+.dismples {
+  display: flex;
+  position: relative;
+}
+.dimples.left {
+  position: absolute;
+  left: 0px;
+}
+.dimples.right {
+  position: absolute;
+  right: 0px;
+}
+.dimples {
+  top: 50px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  border: 3px solid black;
+}
+.mouth {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 232px;
+  height: 180px;
+  top: 7px;
+  overflow: hidden;
+}
+.mouth .ridiculousMouth-box > .ridiculousMouth.left {
+  position: absolute;
+  top: -7px;
+  border: 3px solid black;
+  height: 30px;
+  width: 100px;
+  border-bottom-left-radius: 60px 30px;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-25deg);
+  background: #ffe600;
+}
+.ridiculousMouth-box {
+  position: relative;
+  left: 16px;
+  z-index: 1;
+  height: 100%;
+}
+.mouth .ridiculousMouth-box > .ridiculousMouth.right {
+  position: absolute;
+  top: -6px;
+  right: 30px;
+  width: 100px;
+  height: 30px;
+  background: #ffe600;
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  border-bottom-right-radius: 60px 30px;
+  transform: rotate(25deg);
+}
+.mouth .yuan1 {
+  border: 3px solid black;
+  height: 1000px;
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  bottom: 0;
+  border-radius: 75px/300px;
+  background-color: #9b000a;
+  overflow: hidden;
+}
+.mouth .yuan1 .yuan2 {
+  width: 150px;
+  height: 300px;
+  background: #ff485f;
+  position: absolute;
+  bottom: -155px;
+  left: 50%;
+  margin-left: -75px;
+  border-radius: 100px 100px;
+}
